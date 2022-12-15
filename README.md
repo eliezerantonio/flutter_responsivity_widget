@@ -47,9 +47,9 @@ import 'package:flutter_responsivity_widget/flutter_responsivity_widget.dart';;
 
 Exemplo normal:
 
-![normal](https://github.com/eliezerantonio/flutter_carousel_intro/blob/main/gif/normal.gif)
+
 
 ```
   ## My Packages:
   
-  [Flutter Carousel Intro](https://github.com/eliezerantonio/flutter_carousel_intro)
+  [flutter_carousel_intro](https://github.com/eliezerantonio/flutter_carousel_intro)
