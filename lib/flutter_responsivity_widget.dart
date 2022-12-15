@@ -18,8 +18,11 @@ class Responsive {
     _diagonal = math.sqrt(math.pow(_width, 2) + math.pow(_height, 2));
   }
 
+  //width in percent
   double wp(double percent) => _width * percent / 100;
+  //height in percent
   double hp(double percent) => _height * percent / 100;
+  //diagonal in percent
   double dp(double percent) => _diagonal * percent / 100;
 
   double get width => _width;
