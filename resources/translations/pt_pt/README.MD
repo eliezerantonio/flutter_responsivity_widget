@@ -1,16 +1,18 @@
 
-# flutter_carousel_intro
+# flutter_responsivity_widget
 
  by: [Eliezer Antonio](https://github.com/eliezerantonio)
 
+## Nota
+
+A maioria de nos do Flutter adicionamos tamanhos fixos nos nosso componentes quer seja texto, imagens ou outro widget, e as vezes por causa disso em  diferentes tamanhos de tela acabamos por  cair no famoso overflow, Com esse  package cada componente vai se ajustando em cada diferente tamanho de dispositivo, apesar de existir outras abordagens pra solucionar isso mas uma adaptação automática dando o tamanho certo em cada device pode ser melhor em termos de UX  e tem mais outras vantagens
+
 ## Funcionalidades
 
-- [X] Custom child widgets
-- [X] Slide transition
-- [X] Rotate transition
-- [ ] Infinite Scroll
-- [ ] Forward button & Back button
-- [ ] Auto play
+- [X] Width in percent
+- [X] Height in percent
+- [X] Diagonal in percent
+- [X] Detect tablet size
 
 ## Plataformas suportadas
 
@@ -32,47 +34,13 @@ import 'package:flutter_responsivity_widget/flutter_responsivity_widget.dart';;
 ## Como usar
 
 ```dart
-FlutterCarouselIntro(  
-      slides: [
-        SvgPicture.asset("assets/slide-1.svg"),
-        SvgPicture.asset("assets/slide-2.svg"),
-        SvgPicture.asset("assets/slide-3.svg"),
-        SvgPicture.asset("assets/slide-4.svg"),
-        SvgPicture.asset("assets/slide-5.svg"),
-      ],
-    );
+
   ```
 
 ## Exemplo geral
 
 ```dart
-class MySlideShow extends StatelessWidget {
-  const MySlideShow({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return FlutterCarouselIntro(
-      pointsAbove: false,
 
-      animatedRotateX: false,
-      animatedRotateZ: true,
-      scale: true,
-      animatedOpacity: false,
-
-      primaryBullet: 20,
-      secundaryBullet: 12,
-      primaryColor: Colors.pink,
-      secundaryColor: Colors.grey,
-      dotsCurve: Curves.slowMiddle,
-      slides: [
-        SvgPicture.asset("assets/slide-1.svg"),
-        SvgPicture.asset("assets/slide-2.svg"),
-        SvgPicture.asset("assets/slide-3.svg"),
-        SvgPicture.asset("assets/slide-4.svg"),
-        SvgPicture.asset("assets/slide-5.svg"),
-      ],
-    );
-  }
-}
   ```  
   
 ## Gif
@@ -80,7 +48,6 @@ class MySlideShow extends StatelessWidget {
 Exemplo normal:
 
 ![normal](https://github.com/eliezerantonio/flutter_carousel_intro/blob/main/gif/normal.gif)
-
 
 ```
   ## My Packages:
