@@ -138,7 +138,7 @@ class ExamplePage extends StatelessWidget {
 
 ### resultado do exemplo acima
 
- ![title](resources/images/conteudo_difente.png)
+ ![normal](https://github.com/eliezerantonio/flutter_responsivity_widget/blob/main/resources/gifs/conteudo_difente.gif)
 
 ## My Packages
   
