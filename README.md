@@ -98,8 +98,6 @@ class ExamplePage extends StatelessWidget {
 
 ##### Resultado  do exemplo acima
 
-
-
 ![normal](https://github.com/eliezerantonio/flutter_responsivity_widget/blob/main/resources/gifs/text_example.gif)
 
 ### Exemplo com  detectando tamanho da tablet
@@ -140,8 +138,8 @@ class ExamplePage extends StatelessWidget {
 
 ### resultado do exemplo acima
 
-  <img src="resources/images/conteudo_difente.png">
- 
+ ![title](resources/images/conteudo_difente.png)
+
 ## My Packages
   
   [flutter_carousel_intro](https://github.com/eliezerantonio/flutter_carousel_intro)
