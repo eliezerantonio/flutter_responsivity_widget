@@ -1,6 +1,6 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-![Dart Version](https://img.shields.io/static/v1?label=dart&message=3.2&color=00579d)
+![Dart Version](https://img.shields.io/static/v1?label=dart&message=3&color=00579d)
 ![Flutter Version](https://img.shields.io/static/v1?label=flutter&message=3&color=42a5f5)
 ![Null Safety](https://img.shields.io/static/v1?label=null-safety&message=done&color=success)
 # flutter_responsivity_widget
