@@ -1,51 +1,44 @@
-[![MIT License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-![Dart Version](https://img.shields.io/static/v1?label=dart&message=3&color=00579d)
-![Flutter Version](https://img.shields.io/static/v1?label=flutter&message=3&color=42a5f5)
-![Null Safety](https://img.shields.io/static/v1?label=null-safety&message=done&color=success)
-# flutter_responsivity_widget
+# flutter\_responsivity\_widget
 
- by: [Eliezer Antonio](https://github.com/eliezerantonio)
+ by: [Eliezer Antonio](https://github.com/eliezerantonio)
 
-##### Voçê pode obter esse resultado totalmente ajustavel ao tamanho da sua tela
+##### You can achieve this result, fully adjustable to your screen size 
 
-  ![normal](https://github.com/eliezerantonio/flutter_responsivity_widget/blob/main/resources/gifs/complex.gif)
-  
-## Nota
+## Note
 
-A maioria de nos do Flutter adicionamos tamanhos fixos nos nosso componentes quer seja texto, imagens ou outro widget, e as vezes por causa disso em  diferentes tamanhos de tela acabamos por  cair no famoso overflow, Com esse  package cada componente vai se ajustando em cada diferente tamanho de dispositivo, apesar de existir outras abordagens pra solucionar isso mas uma adaptação automática dando o tamanho certo em cada device pode ser melhor em termos de UX  e tem mais outras vantagens
+Most of us Flutter developers add fixed sizes to our components, whether it's text, images, or other widgets, and sometimes because of this, on different screen sizes, we end up with the famous overflow error. With this package, each component adjusts to every different device size. Although there are other approaches to solve this, an automatic adaptation that provides the right size for each device can be better in terms of UX and has other advantages.
 
-## Funcionalidades
+## Features
 
-- [X] Width in percent
-- [X] Height in percent
-- [X] Diagonal in percent
-- [X] Detect tablet size
+  - [X] Width in percent
+  - [X] Height in percent
+  - [X] Diagonal in percent
+  - [X] Detect tablet size
 
-## Plataformas suportadas
+## Supported Platforms
 
-- Flutter Android
-- Flutter iOS
-- Flutter web
-- Flutter desktop
+  - Flutter Android
+  - Flutter iOS
+  - Flutter web
+  - Flutter desktop
 
-## Visualização
+## Preview
 
-## Instalação
+## Installation
 
-Adicionar `flutter_responsivity_widget: ^0.0.1` no seu  ficheiro de dependências`pubspec.yaml`. E importa:
+Add `flutter_responsivity_widget: ^0.0.1` to your `pubspec.yaml` dependency file. And import:
 
 ```dart
-import 'package:flutter_responsivity_widget/flutter_responsivity_widget.dart';;
+import 'package:flutter_responsivity_widget/flutter_responsivity_widget.dart';
 ```
 
-## Como usar
+## How to use
 
 ```dart
 
-  ```
+```
 
-## Exemplos
+## Examples
 
 ```dart
 
@@ -60,8 +53,8 @@ class ExamplePage extends StatelessWidget {
       body: Center(
         child: Image.asset(
           'assets/logo_jp.jpg',
-          width: responsive.wp(100), // wp- width em  %
-          height: responsive.hp(100), // hp-height em %
+          width: responsive.wp(100), // wp- width in %
+          height: responsive.hp(100), // hp- height in %
         ),
       ),
     );
@@ -69,13 +62,13 @@ class ExamplePage extends StatelessWidget {
 }
 
 
-  ```  
+```
 
-### Exemplo com texto
+### Example with text
 
-###### Para textos é recomendado usar a diagonal
+###### For texts, it is recommended to use the diagonal percentage
 
-  ```dart
+```dart
 
 class ExamplePage extends StatelessWidget {
   const ExamplePage({super.key});
@@ -89,7 +82,7 @@ class ExamplePage extends StatelessWidget {
         child: Text(
           'Example',
           style: TextStyle(
-            fontSize: responsive.dp(8), // dp- diagonal em %
+            fontSize: responsive.dp(8), // dp- diagonal in %
           ),
         ),
       ),
@@ -98,17 +91,15 @@ class ExamplePage extends StatelessWidget {
 }
 
 
-  ```  
+```
 
-##### Resultado  do exemplo acima
+##### Result of the example above
 
-![normal](https://github.com/eliezerantonio/flutter_responsivity_widget/blob/main/resources/gifs/text_example.gif)
+### Example detecting tablet size
 
-### Exemplo com  detectando tamanho da tablet
+###### In case you want to show different content for a tablet and a phone
 
-###### Caso você queira mostrar conteudos diferentes para uma tablet e um telefone
-
-  ```dart
+```dart
 
 class ExamplePage extends StatelessWidget {
   const ExamplePage({super.key});
@@ -124,7 +115,7 @@ class ExamplePage extends StatelessWidget {
             ? Text(
                 'iPad',
                 style: TextStyle(
-                  fontSize: responsive.dp(10), /
+                  fontSize: responsive.dp(10),
                 ),
               )
             : Text( 'iPhone',
@@ -138,12 +129,22 @@ class ExamplePage extends StatelessWidget {
 }
 
 
-  ```
+```
 
-### resultado do exemplo acima
-
- ![normal](https://github.com/eliezerantonio/flutter_responsivity_widget/blob/main/resources/gifs/conteudo_difente.gif)
+### Result of the example above
 
 ## My Packages
-  
-  [flutter_carousel_intro](https://github.com/eliezerantonio/flutter_carousel_intro)
+
+  [flutter\_carousel\_intro](https://github.com/eliezerantonio/flutter_carousel_intro)
+
+-----
+
+## Contributing
+
+Contributions are welcome\! If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
